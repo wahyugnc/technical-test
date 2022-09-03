@@ -51,6 +51,8 @@ To run this project, you will need to add the following environment variables to
 
 ## Documentation
 
+Import collection to postman
+
 [![Download Collection](https://heremaps.github.io/postman-collections/img/download.svg)](../../raw/master/UseDeall.postman_collection.json)
 
 
