@@ -1,0 +1,270 @@
+{
+	"info": {
+		"_postman_id": "6bf02208-6a6e-49b9-9e70-eb3ce0a3f573",
+		"name": "UseDeall",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3366873"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Find All",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NjIxOTQyMzEsInJvbGUiOiJhZG1pbiIsInVzZXJJZCI6MTAsInVzZXJuYW1lIjoid2FoeXVnbmMifQ.tGo9agR374ueG0jcqkPTuNAxVsaVAD5KcQ3EWhKfqpXtQmYLw_IBxpLLUBTOVLR7zcZLbhqCAy_kwbItf--W1g",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://localhost:3000/v1/user?page_number=1&page_size=10",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"v1",
+								"user"
+							],
+							"query": [
+								{
+									"key": "page_number",
+									"value": "1"
+								},
+								{
+									"key": "page_size",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NjIxOTM1MzQsInJvbGUiOiJhZG1pbiIsInVzZXJuYW1lIjoid2FoeXVnbmMifQ.qyEllNz-bPFEAC46y4M7lcONJzEQNkZYD5MXTQ6kUq3CcX_0NmnHjJva--6ApeTpa3wgSqsHY1fzXq_pFjOuSQ",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\": \"nabil123\",\n    \"password\":\"123123\",\n    \"role\":\"user\",\n    \"first_name\": \"Nabil\",\n    \"last_name\": \"Kastara\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/v1/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"v1",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get User Id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NjIxOTM1MzQsInJvbGUiOiJhZG1pbiIsInVzZXJuYW1lIjoid2FoeXVnbmMifQ.qyEllNz-bPFEAC46y4M7lcONJzEQNkZYD5MXTQ6kUq3CcX_0NmnHjJva--6ApeTpa3wgSqsHY1fzXq_pFjOuSQ",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://localhost:3000/v1/user/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"v1",
+								"user",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NjIxOTM1MzQsInJvbGUiOiJhZG1pbiIsInVzZXJuYW1lIjoid2FoeXVnbmMifQ.qyEllNz-bPFEAC46y4M7lcONJzEQNkZYD5MXTQ6kUq3CcX_0NmnHjJva--6ApeTpa3wgSqsHY1fzXq_pFjOuSQ",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\":5,\n    \"email\": \"namasaya@gmail.com\",\n    \"password\":\"123456\",\n    \"first_name\": \"Nama\",\n    \"last_name\": \"Saya\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/v1/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"v1",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NjIxOTM1MzQsInJvbGUiOiJhZG1pbiIsInVzZXJuYW1lIjoid2FoeXVnbmMifQ.qyEllNz-bPFEAC46y4M7lcONJzEQNkZYD5MXTQ6kUq3CcX_0NmnHjJva--6ApeTpa3wgSqsHY1fzXq_pFjOuSQ",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://localhost:3000/v1/user/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"v1",
+								"user",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User Login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\": \"wahyugnc\",\n    \"password\":\"123123\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/v1/user/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"v1",
+								"user",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Refresh Token",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"refreshToken\":\"eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im5hbWFzYXlhM0BnbWFpbC5jb20iLCJleHAiOjE2NjIxOTQ1MTN9.m_bXMvrtpfhyrZPlk0Tc-PLjKQ3Y1AddQLUH5Wh0UMy5Ke36lPckIEuVlltDv0lsoVtMPxaqbAIAE69rIeOWuQ\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/v1/user/refresh-token",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"v1",
+								"user",
+								"refresh-token"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
