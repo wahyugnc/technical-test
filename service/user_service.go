@@ -228,6 +228,16 @@ func (service *UserServiceImpl) Update(ctx *fiber.Ctx, params *entity.User) (*re
 }
 
 func (service *UserServiceImpl) FindById(ctx *fiber.Ctx, userId int) (*response.User, error) {
+	claims := utils.JwtVerificationWithClaim(ctx)
+
+	if claims.UserId != userId {
+		if claims.Role != utils.Assign_Role {
+			panic(exception.ForbiddenError{
+				Message: utils.Message_Forbidden,
+			})
+		}
+	}
+
 	res, err := service.UserRepository.FindById(ctx.Context(), userId)
 	if err != nil {
 		if err == sql.ErrNoRows {
