@@ -79,7 +79,7 @@ Role Admin and User
 
 ![](doc/diagram_update.png)
 
-![](doc/diagram_delete.png)
+![](doc/diagram_delete_user.png)
 
 ## Screen Shoot
 
