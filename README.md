@@ -70,10 +70,15 @@ Role Admin and User
 ## Screen Shoot
 
 ![](doc/deploy_01.png)
+
 ![](doc/deploy_02.png)
+
 ![](doc/deploy_03.png)
+
 ![](doc/deploy_04.png)
+
 ![](doc/deploy_05.png)
+
 ![](doc/deploy_06.png)
 ## Authors
 
