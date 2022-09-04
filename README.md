@@ -71,6 +71,8 @@ Role Admin and User
 
 ![](doc/diagram_01.png)
 
+![](doc/diagram_02.png)
+
 ## Screen Shoot
 
 ![](doc/deploy_01.png)
