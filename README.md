@@ -67,6 +67,10 @@ Role Admin and User
   password : 123123
 ```
 
+## Flow Diagram
+
+![](doc/diagram_01.png)
+
 ## Screen Shoot
 
 ![](doc/deploy_01.png)
