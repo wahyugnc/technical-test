@@ -1,4 +1,3 @@
-
 # Technical Test
 
 
@@ -51,8 +50,6 @@ To run this project, you will need to add the following environment variables to
 
 ## Documentation
 
-Import collection to postman
-
 [![Download Collection](https://heremaps.github.io/postman-collections/img/download.svg)](../../raw/master/UseDeall.postman_collection.json)
 
 
@@ -70,7 +67,14 @@ Role Admin and User
   password : 123123
 ```
 
+## Screen Shoot
 
+![](doc/deploy_01.png)
+![](doc/deploy_02.png)
+![](doc/deploy_03.png)
+![](doc/deploy_04.png)
+![](doc/deploy_05.png)
+![](doc/deploy_06.png)
 ## Authors
 
 - [@wahyugnc](https://www.github.com/wahyugnc)
