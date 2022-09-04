@@ -79,6 +79,8 @@ Role Admin and User
 
 ![](doc/deploy_05.png)
 
+![](doc/deploy_07.png)
+
 ![](doc/deploy_06.png)
 ## Authors
 
