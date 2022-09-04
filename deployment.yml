@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: backend-deployment
+spec:
+  selector: 
+    matchLabels:
+      app: backend
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: backend
+    spec:
+      containers:
+        - name: backend
+          image: usedeall:lastest
+          imagePullPolicy: IfNotPresent
+          env:
+            - name: MARIADB_CONNECTION_STRING
+              value: root:root123@tcp(192.168.100.9:3306)/usedeall_db?charset=utf8mb4&parseTime=True&loc=Local
+          ports:
+            - containerPort: 3000
